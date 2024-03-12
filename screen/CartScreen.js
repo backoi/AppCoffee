@@ -62,11 +62,48 @@ const CartScreen = ({ navigation }) => {
         }
         getTotal(newList)
         setLstCart(newList)
+    };
 
+    const handleReduce = async (it) => {
+        if (it.sl == 1) {
+            const vt = lstCart.findIndex((each) => each.id == it.id)
+            lstCart.splice(vt, 1)
+            try {
+                const a = await AsyncStorage.getItem('listCart')
+                let lst = JSON.parse(a)
+                const vitri = lst.findIndex((each) => each.id == it.id)
+                lst.splice(vitri, 1)
+                const jsonValue = JSON.stringify(lst);
+                await AsyncStorage.setItem('listCart', jsonValue);
+            } catch (e) {
+                // error reading value
+            }
+            getTotal(lstCart)
+            setLstCart([...lstCart])
+        }
+        else {
+            const newList = lstCart.map((item) => {
+                if (item.id == it.id) {
+                    it.sl--
+                }
+                return { ...item }
+            })
+            try {
+                const a = await AsyncStorage.getItem('listCart')
+                let lst = JSON.parse(a)
+                const vitri = lst.findIndex((each) => each.id == it.id)
+                lst.splice(vitri, 1, { id: it.id, count: it.sl })
+                const jsonValue = JSON.stringify(lst);
+                await AsyncStorage.setItem('listCart', jsonValue);
+                //newList = lst
+            } catch (e) {
+                // error reading value
+            }
+            getTotal(newList)
+            setLstCart(newList)
+        }
 
-
-
-    }
+    };
     useEffect(() => {
         //console.log('trong effect')
         if (isFocus) {
@@ -74,7 +111,7 @@ const CartScreen = ({ navigation }) => {
             renderCart()
 
         }
-    }, [isFocus])
+    }, [isFocus]);
     return (
         <View style={{ flex: 1, backgroundColor: '#252A32' }}>
             <ScrollView contentContainerStyle={{ paddingBottom: 70, backgroundColor: '#252A32' }} >
@@ -106,7 +143,7 @@ const CartScreen = ({ navigation }) => {
                                             <Text style={{ color: 'white', fontSize: 20, fontWeight: 'bold' }}>{item.prices[1].price}</Text>
                                         </View>
                                         <View style={{ flexDirection: 'row', }}>
-                                            <TouchableOpacity style={{ width: 35, height: 35, backgroundColor: '#D17842', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
+                                            <TouchableOpacity onPress={() => handleReduce(item)} style={{ width: 35, height: 35, backgroundColor: '#D17842', borderRadius: 10, justifyContent: 'center', alignItems: 'center' }}>
                                                 <Text style={{ fontSize: 25, fontWeight: 'bold', color: 'white' }}>-</Text>
                                             </TouchableOpacity>
                                             <View style={{ width: 60, height: 35, backgroundColor: '#0C0F14', borderRadius: 10, borderWidth: 2, borderColor: '#D17842', justifyContent: 'center', alignItems: 'center', marginHorizontal: 20 }}>

@@ -92,6 +92,27 @@ const HomeScreen = ({ navigation }) => {
 
         }
     };
+    const getHistory = async () => {
+        let listHistory = []
+        try {
+            const jsonValue = await AsyncStorage.getItem('listHistory');
+            if (jsonValue) {
+                listHistory = JSON.parse(jsonValue)
+                console.log('lich su mua hang: ', listHistory)
+            }
+            else {
+                let lst = []
+                try {
+                    const jsonValue = JSON.stringify(lst);
+                    await AsyncStorage.setItem('listHistory', jsonValue);
+                } catch (e) {
+                    // error reading value
+                }
+            }
+        } catch (error) {
+
+        }
+    };
     const getListLiked = async () => {
         let listLiked = []
         try {
@@ -116,6 +137,7 @@ const HomeScreen = ({ navigation }) => {
     useFocusEffect(() => {
         getCart()
         getListLiked()
+        getHistory()
     },)
 
     return (

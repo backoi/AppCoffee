@@ -6,28 +6,22 @@ import { useFocusEffect, useIsFocused } from '@react-navigation/native';
 import CardFav from '../components/CardFav';
 import HeaderBar from '../components/HeaderBar';
 const LikeScreen = ({ navigation }) => {
-    console.log('baa')
+
     const isFocus = useIsFocused()
     const [lstLiked, setLstLiked] = useState([])
     const getListLiked = async () => {
         try {
             const a = await AsyncStorage.getItem('listLiked')
             let lst = JSON.parse(a)
-            console.log('danh sach tren kho', lst)
+            //console.log('danh sach tren kho', lst)
             let data = lst.map((each) => {
                 return CoffeeData.find(it => it.id == each)
-                // CoffeeData.map((item) => {
-                //     if (item.id == each) {
-                //         //console.log('trung', item.id, each)
-                //         liked.push(item)
-                //         liked.reverse()
-                //     }
-                // })
+
             })
-            console.log('danh sach', data)
+
             setLstLiked(data)
             //console.log('danh sach liked', lstLiked)
-            //
+
         } catch (error) {
 
         }
