@@ -1,7 +1,7 @@
 
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { HomeScreen, CartScreen, LikeScreen, HistoryScreen } from '../screen'
+import { HomeScreen, CartScreen, HistoryScreen, FavScreen } from '../screen'
 import Icon from 'react-native-vector-icons/FontAwesome6';
 const Tab = createBottomTabNavigator()
 const BottomTabs = () => {
@@ -21,7 +21,7 @@ const BottomTabs = () => {
                     <Icon name={'bag-shopping'} size={25} style={{ color: (focused) ? '#D17842' : '#52555A' }} />
                 )
             }} />
-            <Tab.Screen name='Like' component={LikeScreen} options={{
+            <Tab.Screen name='Fav' component={FavScreen} options={{
                 tabBarIcon: ({ focused }) => (
                     <Icon name={'heart'} size={25} style={{ color: (focused) ? '#D17842' : '#52555A' }} />
                 )

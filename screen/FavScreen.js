@@ -5,7 +5,7 @@ import CoffeeData from '../data/CoffeeData';
 import { useFocusEffect, useIsFocused } from '@react-navigation/native';
 import CardFav from '../components/CardFav';
 import HeaderBar from '../components/HeaderBar';
-const LikeScreen = ({ navigation }) => {
+const FavScreen = ({ navigation }) => {
 
     const isFocus = useIsFocused()
     const [lstLiked, setLstLiked] = useState([])
@@ -58,4 +58,4 @@ const LikeScreen = ({ navigation }) => {
 
 
 }
-export default LikeScreen
+export default FavScreen

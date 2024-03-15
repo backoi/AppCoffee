@@ -119,7 +119,7 @@ const HomeScreen = ({ navigation }) => {
             const jsonValue = await AsyncStorage.getItem('listLiked');
             if (jsonValue) {
                 listLiked = JSON.parse(jsonValue)
-                console.log('mang yeu thich: ', listLiked)
+                //console.log('mang yeu thich: ', listLiked)
             }
             else {
                 let lst = []
@@ -226,7 +226,8 @@ const HomeScreen = ({ navigation }) => {
                 keyExtractor={(item) => item.id}
                 renderItem={({ item }) => {
                     return (
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={() => { navigation.navigate('Details', item) }}
+                        >
 
                             <Card
                                 item={item}

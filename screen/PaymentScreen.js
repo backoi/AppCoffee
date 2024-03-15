@@ -5,8 +5,13 @@ import GradientIcon from '../components/GradientIcon'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 
 const PaymentScreen = ({ navigation, route }) => {
+    const today = new Date()
+    const uniqueID = UUID.randomUUID().toString();
+    var date = today.getHours() + ":" + today.getMinutes() + ' ' + today.getDate() + '/' + (today.getMonth() + 1);
+    //console.log(date)
 
     const item = route.params.lstCart
+    //console.log(item)
     const total = route.params.total
     const listPayments = [
         {
@@ -36,7 +41,7 @@ const PaymentScreen = ({ navigation, route }) => {
             try {
                 const history = await AsyncStorage.getItem('listHistory')
                 let lst = JSON.parse(history)
-                lst.push({ ...item, method: paymentMode })
+                lst.push({ items: item, method: paymentMode, timeOrder: date, total: total, key: uniqueID })
                 const jsonValue = JSON.stringify(lst);
                 await AsyncStorage.setItem('listHistory', jsonValue);
                 //console.log('lich su mua', lst)
@@ -46,7 +51,6 @@ const PaymentScreen = ({ navigation, route }) => {
             }
         }
     }
-
 
     return (
         //khi click thanh toan luu du lieu vao store de su dung ben history

@@ -7,7 +7,7 @@ const CoffeeData = [
     imagelink_square: require('../assets/coffee_assets/americano/square/americano_pic_1_square.png'),
     imagelink_portrait: require('../assets/coffee_assets/americano/portrait/americano_pic_1_portrait.png'),
     ingredients: 'Milk',
-    special_ingredient: 'With Steamed Milk',
+    special_ingredient: 'With Steamed Milk 1',
     prices: [
       { size: 'S', price: '1.31', currency: '$' },
       { size: 'M', price: '3.11', currency: '$' },
@@ -27,7 +27,7 @@ const CoffeeData = [
     imagelink_square: require('../assets/coffee_assets/americano/square/americano_pic_2_square.png'),
     imagelink_portrait: require('../assets/coffee_assets/americano/portrait/americano_pic_2_portrait.png'),
     ingredients: 'Milk',
-    special_ingredient: 'With Steamed Milk2',
+    special_ingredient: 'With Steamed Milk 2',
     prices: [
       { size: 'S', price: '1.32', currency: '$' },
       { size: 'M', price: '3.12', currency: '$' },
@@ -47,7 +47,7 @@ const CoffeeData = [
     imagelink_square: require('../assets/coffee_assets/americano/square/americano_pic_3_square.png'),
     imagelink_portrait: require('../assets/coffee_assets/americano/portrait/americano_pic_3_portrait.png'),
     ingredients: 'Milk',
-    special_ingredient: 'With Steamed Milk',
+    special_ingredient: 'With Steamed Milk 3',
     prices: [
       { size: 'S', price: '1.33', currency: '$' },
       { size: 'M', price: '3.15', currency: '$' },
@@ -67,7 +67,7 @@ const CoffeeData = [
     imagelink_square: require('../assets/coffee_assets/black_coffee/square/black_coffee_pic_1_square.png'),
     imagelink_portrait: require('../assets/coffee_assets/black_coffee/portrait/black_coffee_pic_1_portrait.png'),
     ingredients: 'Milk',
-    special_ingredient: 'With Steamed Milk',
+    special_ingredient: 'With Steamed Milk 4',
     prices: [
       { size: 'S', price: '1.38', currency: '$' },
       { size: 'M', price: '3.15', currency: '$' },
@@ -87,7 +87,7 @@ const CoffeeData = [
     imagelink_square: require('../assets/coffee_assets/black_coffee/square/black_coffee_pic_2_square.png'),
     imagelink_portrait: require('../assets/coffee_assets/black_coffee/portrait/black_coffee_pic_2_portrait.png'),
     ingredients: 'Milk',
-    special_ingredient: 'With Steamed Milk',
+    special_ingredient: 'With Steamed Milk 5',
     prices: [
       { size: 'S', price: '1.38', currency: '$' },
       { size: 'M', price: '3.15', currency: '$' },
@@ -107,7 +107,7 @@ const CoffeeData = [
     imagelink_square: require('../assets/coffee_assets/black_coffee/square/black_coffee_pic_3_square.png'),
     imagelink_portrait: require('../assets/coffee_assets/black_coffee/portrait/black_coffee_pic_3_portrait.png'),
     ingredients: 'Milk',
-    special_ingredient: 'With Steamed Milk',
+    special_ingredient: 'With Steamed Milk 6',
     prices: [
       { size: 'S', price: '1.38', currency: '$' },
       { size: 'M', price: '3.15', currency: '$' },
@@ -127,7 +127,7 @@ const CoffeeData = [
     imagelink_square: require('../assets/coffee_assets/cappuccino/square/cappuccino_pic_1_square.png'),
     imagelink_portrait: require('../assets/coffee_assets/cappuccino/portrait/cappuccino_pic_1_portrait.png'),
     ingredients: 'Milk',
-    special_ingredient: 'With Steamed Milk',
+    special_ingredient: 'With Steamed Milk 7',
     prices: [
       { size: 'S', price: '1.38', currency: '$' },
       { size: 'M', price: '3.15', currency: '$' },
@@ -147,7 +147,7 @@ const CoffeeData = [
     imagelink_square: require('../assets/coffee_assets/cappuccino/square/cappuccino_pic_2_square.png'),
     imagelink_portrait: require('../assets/coffee_assets/cappuccino/portrait/cappuccino_pic_2_portrait.png'),
     ingredients: 'Milk',
-    special_ingredient: 'With Steamed Milk',
+    special_ingredient: 'With Steamed Milk 8',
     prices: [
       { size: 'S', price: '1.38', currency: '$' },
       { size: 'M', price: '3.15', currency: '$' },
@@ -167,7 +167,7 @@ const CoffeeData = [
     imagelink_square: require('../assets/coffee_assets/cappuccino/square/cappuccino_pic_3_square.png'),
     imagelink_portrait: require('../assets/coffee_assets/cappuccino/portrait/cappuccino_pic_3_portrait.png'),
     ingredients: 'Milk',
-    special_ingredient: 'With Steamed Milk3',
+    special_ingredient: 'With Steamed Milk 9',
     prices: [
       { size: 'S', price: '1.36', currency: '$' },
       { size: 'M', price: '3.15', currency: '$' },
@@ -187,7 +187,7 @@ const CoffeeData = [
     imagelink_square: require('../assets/coffee_assets/espresso/square/espresso_pic_1_square.png'),
     imagelink_portrait: require('../assets/coffee_assets/espresso/portrait/espresso_pic_1_portrait.png'),
     ingredients: 'Milk',
-    special_ingredient: 'With Steamed Milk',
+    special_ingredient: 'With Steamed Milk 10',
     prices: [
       { size: 'S', price: '1.38', currency: '$' },
       { size: 'M', price: '3.15', currency: '$' },
@@ -207,7 +207,7 @@ const CoffeeData = [
     imagelink_square: require('../assets/coffee_assets/espresso/square/espresso_pic_2_square.png'),
     imagelink_portrait: require('../assets/coffee_assets/espresso/portrait/espresso_pic_2_portrait.png'),
     ingredients: 'Milk',
-    special_ingredient: 'With Steamed Milk',
+    special_ingredient: 'With Steamed Milk 11',
     prices: [
       { size: 'S', price: '1.38', currency: '$' },
       { size: 'M', price: '3.15', currency: '$' },
@@ -227,7 +227,7 @@ const CoffeeData = [
     imagelink_square: require('../assets/coffee_assets/espresso/square/espresso_pic_3_square.png'),
     imagelink_portrait: require('../assets/coffee_assets/espresso/portrait/espresso_pic_3_portrait.png'),
     ingredients: 'Milk',
-    special_ingredient: 'With Steamed Milk',
+    special_ingredient: 'With Steamed Milk 12',
     prices: [
       { size: 'S', price: '1.38', currency: '$' },
       { size: 'M', price: '3.15', currency: '$' },
@@ -247,7 +247,7 @@ const CoffeeData = [
     imagelink_square: require('../assets/coffee_assets/latte/square/latte_pic_1_square.png'),
     imagelink_portrait: require('../assets/coffee_assets/latte/portrait/latte_pic_1_portrait.png'),
     ingredients: 'Milk',
-    special_ingredient: 'With Steamed Milk',
+    special_ingredient: 'With Steamed Milk 13',
     prices: [
       { size: 'S', price: '1.38', currency: '$' },
       { size: 'M', price: '3.15', currency: '$' },
@@ -267,7 +267,7 @@ const CoffeeData = [
     imagelink_square: require('../assets/coffee_assets/latte/square/latte_pic_2_square.png'),
     imagelink_portrait: require('../assets/coffee_assets/latte/portrait/latte_pic_2_portrait.png'),
     ingredients: 'Milk',
-    special_ingredient: 'With Steamed Milk',
+    special_ingredient: 'With Steamed Milk 14',
     prices: [
       { size: 'S', price: '1.38', currency: '$' },
       { size: 'M', price: '3.15', currency: '$' },
@@ -287,7 +287,7 @@ const CoffeeData = [
     imagelink_square: require('../assets/coffee_assets/latte/square/latte_pic_3_square.png'),
     imagelink_portrait: require('../assets/coffee_assets/latte/portrait/latte_pic_3_portrait.png'),
     ingredients: 'Milk',
-    special_ingredient: 'With Steamed Milk',
+    special_ingredient: 'With Steamed Milk 14',
     prices: [
       { size: 'S', price: '1.38', currency: '$' },
       { size: 'M', price: '3.15', currency: '$' },
@@ -307,7 +307,7 @@ const CoffeeData = [
     imagelink_square: require('../assets/coffee_assets/macchiato/square/macchiato_pic_1_square.png'),
     imagelink_portrait: require('../assets/coffee_assets/macchiato/portrait/macchiato_pic_1_portrait.png'),
     ingredients: 'Milk',
-    special_ingredient: 'With Steamed Milk',
+    special_ingredient: 'With Steamed Milk 16',
     prices: [
       { size: 'S', price: '1.38', currency: '$' },
       { size: 'M', price: '3.15', currency: '$' },
@@ -327,7 +327,7 @@ const CoffeeData = [
     imagelink_square: require('../assets/coffee_assets/macchiato/square/macchiato_pic_2_square.png'),
     imagelink_portrait: require('../assets/coffee_assets/macchiato/portrait/macchiato_pic_2_portrait.png'),
     ingredients: 'Milk',
-    special_ingredient: 'With Steamed Milk',
+    special_ingredient: 'With Steamed Milk 17',
     prices: [
       { size: 'S', price: '1.38', currency: '$' },
       { size: 'M', price: '3.15', currency: '$' },
@@ -347,7 +347,7 @@ const CoffeeData = [
     imagelink_square: require('../assets/coffee_assets/macchiato/square/macchiato_pic_3_square.png'),
     imagelink_portrait: require('../assets/coffee_assets/macchiato/portrait/macchiato_pic_3_portrait.png'),
     ingredients: 'Milk',
-    special_ingredient: 'With Steamed Milk',
+    special_ingredient: 'With Steamed Milk 18',
     prices: [
       { size: 'S', price: '1.38', currency: '$' },
       { size: 'M', price: '3.15', currency: '$' },
